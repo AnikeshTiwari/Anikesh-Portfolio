@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anikesh's Portfolio</title>
+  <link rel="icon" type="image/png" href="Images/logocircle.png" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ==================== Navigation ==================== -->
+  <nav id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo gradient-text">Anikesh.dev</a>
+
+      <button id="menu-toggle" class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+
+
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================== Hero Section ==================== -->
+  <section id="home" class="hero">
+    <div class="container hero-container">
+      <!-- Left Image -->
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <div class="border-ring">
+            <img src="Images/Anikesh.jpeg" alt="Profile Image" />
+          </div>
+          <div class="glow-layer layer1"></div>
+          <div class="glow-layer layer2"></div>
+          <div class="glow-layer layer3"></div>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="gradient-text">Anikesh</span></h1>
+
+        <h2>
+          <span id="changing-role">Full Stack</span>
+          <span class="constant-text">Developer</span>
+        </h2>
+
+        <p>
+          I’m a Full Stack Developer who builds complete, high-performing web
+          applications — from sleek front-end interfaces to powerful back-end
+          systems. Let’s create something exceptional together.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
+          <a href="#projects" class="btn btn-outline">View Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== About Section ==================== -->
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2 class="section-title">
+        About <span class="gradient-text">Me</span>
+      </h2>
+      <div class="divider"></div>
+
+      <div class="about-content">
+        <div class="about-image">
+          <img src="./Images/1212.jpg" alt="About Me" />
+        </div>
+
+        <div class="about-text">
+          <h3>Who am I?</h3>
+          <p>I’m Anikesh Tiwari, a Full Stack Developer with hands-on experience in PHP, HTML/CSS, Kotlin, Java, SQL,
+            and Python. I specialize in building fast, responsive, and user-centric web applications that tackle
+            real-world challenges. I thrive on transforming ideas into functional, elegant products and continuously
+            sharpening my skills. Currently, I’m expanding into Full Stack Development with AI — integrating modern AI
+            tools and automation to craft smarter, more powerful digital solutions. I’m always eager to learn,
+            experiment, and collaborate to create meaningful, impactful experiences.
+          </p>
+
+          <div class="info-box">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <h4 class="education-h4">Engineering</h4>
+              <p class="education-p">
+                B.Tech in Information Science and Engineering<br />
+                Brindavan Group of Engineering - Affiliated with VTU, 2026
+              </p>
+            </div>
+          </div>
+          <div class="info-box">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <h4 class="education-h4">Diploma</h4>
+              <p class="education-p">
+                Diploma in Information Technology<br />
+                Bhagwan Mahavir Uni, 2023
+              </p>
+            </div>
+          </div>
+
+          <div class="about-buttons">
+            <a href="https://drive.google.com/file/d/1A9mbhlBtYSo4U3LrwOx36xV6sX8N1MAp/view?usp=drivesdk" target="_blank"
+              class="btn btn-primary">Download Resume</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Timeline -->
+      <div class="experience">
+        <h3>My <span class="gradient-text">Experience</span></h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h4 class="company-name">Catchy Systems</h4>
+                <p class="role-duration">
+                  Front-end Developer • 2025 - Present
+                </p>
+              </div>
+              <p>
+                Designed and developed modern, responsive web interfaces using HTML, CSS, JavaScript, and PHP — with a
+                strong focus on performance, scalability, and seamless user experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h4 class="company-name">Suvya Web</h4>
+                <p class="role-duration">
+                  Internship Front-end Developer • Sep 2023 - Nov 2023
+                </p>
+              </div>
+              <p>
+                Built responsive UIs using HTML, CSS, JavaScript, and PHP. Learned practical skills in UI design,
+                performance optimization, and team collaboration.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h4 class="company-name">Sparkle Coaching Classes</h4>
+                <p class="role-duration">
+                  Subject Teacher [Maths , Science , English] • Dec 2021 - Aug 2022
+                </p>
+              </div>
+              <p>
+                Taught core academic subjects with a focus on conceptual clarity, interactive learning, and student
+                engagement. Designed lesson plans, conducted assessments, and adapted teaching methods to suit diverse
+                learning styles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Skills Section ==================== -->
+
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="skills-heading">
+        <h2 class="section-title-myskills">
+          My <span class="gradient-text">Skills</span>
+        </h2>
+      </div>
+      <div class="divider"></div>
+      <div class="skills-flex-wrapper">
+        <div class="skills-container">
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <p>▶ HTML5</p>
+            <p>▶ CSS3</p>
+            <p>▶ JavaScript (ES6+)</p>
+            <p>▶ React.js</p>
+            <p>▶ BootStrap</p>
+            <p>▶ PHP</p>
+          </div>
+          <div class="skill-card">
+            <h3>Backend</h3>
+            <!-- <p>▶ Node.js</p>
+            <p>▶ Express.js</p>
+            <p>▶ RESTful APIs</p> -->
+            <p>▶ Authentication(JWT)</p>
+            <p>▶ MVC Architecture</p>
+          </div>
+          <div class="skill-card">
+            <h3>Database & Deployment</h3>
+            <p>▶ MySQL</p>
+            <p>▶ MongoDB</p>
+            <p>▶ Sql lite</p>
+            <p>▶ Git / GitHub</p>
+            <!-- <p>▶ Vercel / Netlify</p> -->
+          </div>
+          <div class="skill-card">
+            <h3>Tools & Other Skills</h3>
+            <p>▶ Postman</p>
+            <p>▶ VS Code</p>
+            <p>▶ Figma</p>
+            <p>▶ PhotoShop</p>
+            <!-- <p>▶ Google Ads</p> -->
+          </div>
+        </div>
+
+        <!-- <img src="./Images/me-1.png" alt="My Image" class="skills-image" /> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Projects Section ==================== -->
+
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2 class="section-title">
+        Featured <span class="gradient-text">Projects</span>
+      </h2>
+      <div class="divider"></div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Airport Management System</h3>
+          <p>
+            Developed a web-based application for booking flight tickets and checking seat availability. Implemented
+            user-friendly interfaces for passengers to search flights, view schedules, and confirm bookings. Integrated
+            backend logic to manage flight data, seat inventory, and real-time availability updates.
+          </p>
+          <a class="btn btn-primary">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Attendance Management System</h3>
+          <p>
+            Developed a web-based system to track and manage user attendance efficiently. Implemented features for
+            real-time check-in/check-out, attendance logs, and summary reports. Focused on intuitive UI, secure data
+            handling, and modular architecture using PHP, HTML/CSS, and SQL.
+          </p>
+          <a class="btn btn-primary">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Facial Expression Detection System</h3>
+          <p>
+            Built a Python-based application to detect and classify facial expressions in real time using OpenCV and
+            deep learning. Utilized Haar cascades for face detection and a pre-trained CNN model to recognize emotions
+            such as happy, sad, angry, and surprised. Integrated live webcam feed for real-time analysis and visual
+            feedback. Focused on accuracy, performance, and intuitive UI for seamless interaction.
+          </p>
+          <a target="_blank" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Contact Section ==================== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">
+        Get In <span class="gradient-text">Touch</span>
+      </h2>
+
+      <p class="contact-subtitle">
+        Have a vision in mind? I’d love to help you turn it into reality —
+        let’s talk!
+      </p>
+
+      <div class="contact-wrapper">
+        <div class="contact-left">
+          <h3>Let's Connect</h3>
+
+          <div class="info-box">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>sparkle.anikesh01@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <div class="icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 8733048922</p>
+            </div>
+          </div>
+
+          <h4>Connect on Social</h4>
+          <div class="social-buttons">
+            <a href="https://github.com/AnikeshTiwari" target="_blank" class="social-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/anikesh-tiwari-35a592217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-btn">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+
+          <a href="https://drive.google.com/file/d/1A9mbhlBtYSo4U3LrwOx36xV6sX8N1MAp/view?usp=drivesdk" target="_blank"
+            class="resume-btn">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+
+        <div class="contact-right">
+          <h3>Send a Message</h3>
+
+          <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="7611f8e9-9242-45ef-b0fa-c8abb8dcaf88" />
+
+
+            <input type="hidden" name="subject" value="New Portfolio Contact!" />
+
+            <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you.html" />
+
+            <div class="form-row">
+              <input type="text" name="name" id="name" placeholder="Name" required />
+              <input type="email" name="email" id="email" placeholder="Email" required />
+            </div>
+
+            <input type="text" name="subject" id="subject" placeholder="Subject" required />
+
+            <textarea name="message" id="message" placeholder="Message" rows="6" required></textarea>
+
+            <button type="submit" class="send-btn" id="sendBtn">
+              <span class="btn-text">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </span>
+              <span class="btn-loader"></span>
+            </button>
+          </form>
+        </div>
+        <div id="successPopup">
+          <p class="successPopup-msg">
+            Your message was sent successfully. I will get back to you soon.
+          </p>
+          <button id="closePopup">OK</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Footer ==================== -->
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© 2025 Anikesh Tiwari. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
