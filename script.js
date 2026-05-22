@@ -129,9 +129,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const revealSections = document.querySelectorAll(".skills-section, .projects-section");
   const observer = new IntersectionObserver(
     entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visible"); }),
-    { threshold: 0.2 }
+    { threshold: 0.05, rootMargin: "0px 0px -50px 0px" }
   );
-  revealSections.forEach(s => observer.observe(s));
+  revealSections.forEach(s => {
+    // If already visible in viewport on load, show immediately
+    const rect = s.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      s.classList.add("visible");
+    } else {
+      observer.observe(s);
+    }
+  });
 });
 
 /* ==================== Contact Form ==================== */
