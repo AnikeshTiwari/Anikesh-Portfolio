@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anikesh's Portfolio</title>
   <link rel="icon" type="image/png" href="Images/logocircle.png" />
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+
+  <!-- Mouse Tracker -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
   <!-- ==================== Navigation ==================== -->
   <nav id="navbar">
     <div class="container nav-container">
       <a href="#home" class="logo gradient-text">Anikesh.dev</a>
-
-      <button id="menu-toggle" class="menu-toggle">
-        <i class="fas fa-bars"></i>
-      </button>
-
-
+      <button id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
       <ul id="nav-links" class="nav-links">
         <li><a href="#home" class="nav-link active">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
@@ -38,7 +33,6 @@
   <!-- ==================== Hero Section ==================== -->
   <section id="home" class="hero">
     <div class="container hero-container">
-      <!-- Left Image -->
       <div class="hero-image">
         <div class="image-wrapper">
           <div class="border-ring">
@@ -49,21 +43,17 @@
           <div class="glow-layer layer3"></div>
         </div>
       </div>
-
       <div class="hero-text">
         <h1>Hi, I'm <span class="gradient-text">Anikesh</span></h1>
-
         <h2>
           <span id="changing-role">Full Stack</span>
           <span class="constant-text">Developer</span>
         </h2>
-
         <p>
-          I’m a Full Stack Developer who builds complete, high-performing web
-          applications — from sleek front-end interfaces to powerful back-end
-          systems. Let’s create something exceptional together.
+          Full Stack Developer with 2+ years of cross-company experience shipping end-to-end web applications
+          and AI-integrated tools — from database schema to browser render. Currently building production systems
+          at CatchySystem and engineering LLM pipelines at LearnersByte.
         </p>
-
         <div class="hero-buttons">
           <a href="#contact" class="btn btn-primary">Hire Me</a>
           <a href="#projects" class="btn btn-outline">View Work</a>
@@ -73,53 +63,39 @@
   </section>
 
   <!-- ==================== About Section ==================== -->
-
   <section id="about" class="about-section">
     <div class="container">
-      <h2 class="section-title">
-        About <span class="gradient-text">Me</span>
-      </h2>
+      <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
       <div class="divider"></div>
-
       <div class="about-content">
         <div class="about-image">
           <img src="./Images/1212.jpg" alt="About Me" />
         </div>
-
         <div class="about-text">
           <h3>Who am I?</h3>
-          <p>I’m Anikesh Tiwari, a Full Stack Developer with hands-on experience in PHP, HTML/CSS, Kotlin, Java, SQL,
-            and Python. I specialize in building fast, responsive, and user-centric web applications that tackle
-            real-world challenges. I thrive on transforming ideas into functional, elegant products and continuously
-            sharpening my skills. Currently, I’m expanding into Full Stack Development with AI — integrating modern AI
-            tools and automation to craft smarter, more powerful digital solutions. I’m always eager to learn,
-            experiment, and collaborate to create meaningful, impactful experiences.
+          <p>
+            I'm Anikesh Tiwari, a Full Stack Developer who owns the entire product pipeline — from MySQL schema design
+            and Laravel backend APIs to responsive CSS systems and JavaScript interfaces. I've shipped production features
+            across four companies, cut data-retrieval latency by 25%, reduced manual workflows by 40%, and lifted
+            user engagement by 20%. Currently deepening expertise at the intersection of UI engineering and
+            AI/ML tooling — building smarter, faster, and more impactful digital products.
           </p>
-
           <div class="info-box">
             <i class="fas fa-graduation-cap"></i>
             <div>
               <h4 class="education-h4">Engineering</h4>
-              <p class="education-p">
-                B.Tech in Information Science and Engineering<br />
-                Brindavan Group of Engineering - Affiliated with VTU, 2026
-              </p>
+              <p class="education-p">B.E. in Information Science and Engineering<br/>Brindavan Group of Institutions – VTU, 2026</p>
             </div>
           </div>
           <div class="info-box">
             <i class="fas fa-graduation-cap"></i>
             <div>
               <h4 class="education-h4">Diploma</h4>
-              <p class="education-p">
-                Diploma in Information Technology<br />
-                Bhagwan Mahavir Uni, 2023
-              </p>
+              <p class="education-p">Diploma in Information Technology<br/>Bhagwan Mahavir University, 2023</p>
             </div>
           </div>
-
           <div class="about-buttons">
-            <a href="https://drive.google.com/file/d/1JcIsWL-r0MtMnk4BLgL7pSsECvK64mMP/view?usp=sharing" target="_blank"
-              class="btn btn-primary">Download Resume</a>
+            <a href="https://drive.google.com/file/d/1JcIsWL-r0MtMnk4BLgL7pSsECvK64mMP/view?usp=sharing" target="_blank" class="btn btn-primary">Download Resume</a>
             <a href="#contact" class="btn btn-outline">Contact Me</a>
           </div>
         </div>
@@ -129,19 +105,37 @@
       <div class="experience">
         <h3>My <span class="gradient-text">Experience</span></h3>
         <div class="timeline">
+
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h4 class="company-name">Catchy Systems</h4>
-                <p class="role-duration">
-                  Front-end Developer • 2025 - Present
-                </p>
+                <h4 class="company-name">LearnersByte</h4>
+                <p class="role-duration">AI/ML Prompt Engineering Intern &bull; Jan 2026 – Present</p>
               </div>
-              <p>
-                Designed and developed modern, responsive web interfaces using HTML, CSS, JavaScript, and PHP — with a
-                strong focus on performance, scalability, and seamless user experience.
-              </p>
+              <p>Engineer and iterate prompt architectures for production LLM pipelines across 3 NLP-based applications. Design A/B prompt experiments across 10+ model configurations, and integrate AI outputs into web interfaces with a 4-person team — cutting manual content-curation time by ~30%.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h4 class="company-name">CatchySystem</h4>
+                <p class="role-duration">Full Stack Developer &bull; July 2025 – Present</p>
+              </div>
+              <p>Build and ship end-to-end features using Laravel, PHP, Blade, CSS, and JavaScript across 5+ client-facing modules. Designed RESTful APIs, cut page load time by ~18%, and architected a reusable component library adopted across 4 product modules — reducing duplicate markup by ~35%.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h4 class="company-name">Touches Computer</h4>
+                <p class="role-duration">Web Development Intern &bull; Dec 2023 – Feb 2024</p>
+              </div>
+              <p>Delivered 10+ production-ready responsive pages, improving session engagement by 20%. Optimised MySQL queries across 3 internal tools cutting retrieval latency by 25%, and resolved 15+ cross-browser bugs across Chrome, Firefox, and Safari.</p>
             </div>
           </div>
 
@@ -150,130 +144,92 @@
             <div class="timeline-content">
               <div class="timeline-header">
                 <h4 class="company-name">Suvya Web</h4>
-                <p class="role-duration">
-                  Internship Front-end Developer • Sep 2023 - Nov 2023
-                </p>
+                <p class="role-duration">Software Development Intern &bull; Sep 2023 – Nov 2023</p>
               </div>
-              <p>
-                Built responsive UIs using HTML, CSS, JavaScript, and PHP. Learned practical skills in UI design,
-                performance optimization, and team collaboration.
-              </p>
+              <p>Implemented MVC-structured modules with 3 backend engineers, contributing to 2 client-facing releases. Reduced QA-reported defects by 15% through systematic testing and refactored legacy code paths to improve response time by ~10%.</p>
             </div>
           </div>
 
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <h4 class="company-name">Sparkle Coaching Classes</h4>
-                <p class="role-duration">
-                  Subject Teacher [Maths , Science , English] • Dec 2021 - Aug 2022
-                </p>
-              </div>
-              <p>
-                Taught core academic subjects with a focus on conceptual clarity, interactive learning, and student
-                engagement. Designed lesson plans, conducted assessments, and adapted teaching methods to suit diverse
-                learning styles.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ==================== Skills Section ==================== -->
-
   <section id="skills" class="skills-section">
     <div class="container">
       <div class="skills-heading">
-        <h2 class="section-title-myskills">
-          My <span class="gradient-text">Skills</span>
-        </h2>
+        <h2 class="section-title-myskills">My <span class="gradient-text">Skills</span></h2>
       </div>
       <div class="divider"></div>
       <div class="skills-flex-wrapper">
         <div class="skills-container">
           <div class="skill-card">
             <h3>Frontend</h3>
-            <p>▶ HTML5</p>
-            <p>▶ CSS3</p>
+            <p>▶ HTML5 &amp; CSS3</p>
             <p>▶ JavaScript (ES6+)</p>
-            <p>▶ React.js</p>
-            <p>▶ BootStrap</p>
-            <p>▶ PHP</p>
+            <p>▶ Laravel Blade</p>
+            <p>▶ Responsive Design</p>
+            <p>▶ DOM Manipulation</p>
+            <p>▶ REST API Integration</p>
           </div>
           <div class="skill-card">
             <h3>Backend</h3>
-            <!-- <p>▶ Node.js</p>
-            <p>▶ Express.js</p>
-            <p>▶ RESTful APIs</p> -->
-            <p>▶ Authentication(JWT)</p>
-            <p>▶ MVC Architecture</p>
+            <p>▶ Laravel (PHP / MVC)</p>
+            <p>▶ RESTful API Design</p>
+            <p>▶ Authentication (JWT)</p>
+            <p>▶ Role-based Access Control</p>
+            <p>▶ Session Management</p>
           </div>
           <div class="skill-card">
-            <h3>Database & Deployment</h3>
-            <p>▶ MySQL</p>
+            <h3>Database &amp; DevOps</h3>
+            <p>▶ MySQL (schema, indexing)</p>
             <p>▶ MongoDB</p>
-            <p>▶ Sql lite</p>
+            <p>▶ SQLite</p>
             <p>▶ Git / GitHub</p>
-            <!-- <p>▶ Vercel / Netlify</p> -->
+            <p>▶ XAMPP</p>
           </div>
           <div class="skill-card">
-            <h3>Tools & Other Skills</h3>
+            <h3>AI / ML &amp; Tools</h3>
+            <p>▶ Prompt Engineering</p>
+            <p>▶ LLM Output Evaluation</p>
+            <p>▶ NLP Pipeline Testing</p>
             <p>▶ Postman</p>
-            <p>▶ VS Code</p>
-            <p>▶ Figma</p>
-            <p>▶ PhotoShop</p>
-            <!-- <p>▶ Google Ads</p> -->
+            <p>▶ VS Code &amp; Figma</p>
           </div>
         </div>
-
-        <!-- <img src="./Images/me-1.png" alt="My Image" class="skills-image" /> -->
       </div>
     </div>
   </section>
 
   <!-- ==================== Projects Section ==================== -->
-
   <section id="projects" class="projects-section">
     <div class="container">
-      <h2 class="section-title">
-        Featured <span class="gradient-text">Projects</span>
-      </h2>
+      <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
       <div class="divider"></div>
-
       <div class="projects-grid">
+
         <div class="project-card">
           <h3>Airport Management System</h3>
-          <p>
-            Developed a web-based application for booking flight tickets and checking seat availability. Implemented
-            user-friendly interfaces for passengers to search flights, view schedules, and confirm bookings. Integrated
-            backend logic to manage flight data, seat inventory, and real-time availability updates.
-          </p>
+          <p class="project-tech">PHP · MySQL · DBMS · XAMPP</p>
+          <p>Full-stack flight booking platform with 3-tier role-based access (admin, staff, passenger). Engineered a normalised MySQL schema to handle 1,000+ records, cutting redundant query joins by 30% and reducing retrieval time by 20% via indexed foreign keys.</p>
           <a class="btn btn-primary">View Project</a>
         </div>
 
         <div class="project-card">
           <h3>Attendance Management System</h3>
-          <p>
-            Developed a web-based system to track and manage user attendance efficiently. Implemented features for
-            real-time check-in/check-out, attendance logs, and summary reports. Focused on intuitive UI, secure data
-            handling, and modular architecture using PHP, HTML/CSS, and SQL.
-          </p>
+          <p class="project-tech">Java · JavaScript · DBMS</p>
+          <p>Multi-role attendance platform supporting 200+ student records with real-time dashboard reporting. Eliminated 40% of manual attendance-logging effort through automated report generation and CSV export across 3 access tiers.</p>
           <a class="btn btn-primary">View Project</a>
         </div>
 
         <div class="project-card">
-          <h3>Facial Expression Detection System</h3>
-          <p>
-            Built a Python-based application to detect and classify facial expressions in real time using OpenCV and
-            deep learning. Utilized Haar cascades for face detection and a pre-trained CNN model to recognize emotions
-            such as happy, sad, angry, and surprised. Integrated live webcam feed for real-time analysis and visual
-            feedback. Focused on accuracy, performance, and intuitive UI for seamless interaction.
-          </p>
+          <h3>Facial Expression Detection</h3>
+          <p class="project-tech">Python · OpenCV · CNN · Deep Learning</p>
+          <p>Real-time facial expression classifier using Haar cascades for face detection and a pre-trained CNN to recognise emotions (happy, sad, angry, surprised) from a live webcam feed. Focused on inference speed, accuracy, and seamless UI feedback.</p>
           <a target="_blank" class="btn btn-primary">View Project</a>
         </div>
+
       </div>
     </div>
   </section>
@@ -281,106 +237,65 @@
   <!-- ==================== Contact Section ==================== -->
   <section id="contact" class="contact-section">
     <div class="container">
-      <h2 class="section-title">
-        Get In <span class="gradient-text">Touch</span>
-      </h2>
-
-      <p class="contact-subtitle">
-        Have a vision in mind? I’d love to help you turn it into reality —
-        let’s talk!
-      </p>
-
+      <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+      <p class="contact-subtitle">Have a vision in mind? I'd love to help you turn it into reality — let's talk!</p>
       <div class="contact-wrapper">
         <div class="contact-left">
           <h3>Let's Connect</h3>
-
           <div class="info-box">
             <div class="icon"><i class="fas fa-envelope"></i></div>
-            <div>
-              <h4>Email</h4>
-              <p>sparkle.anikesh01@gmail.com</p>
-            </div>
+            <div><h4>Email</h4><p>sparkle.anikesh01@gmail.com</p></div>
           </div>
-
           <div class="info-box">
             <div class="icon"><i class="fas fa-phone"></i></div>
-            <div>
-              <h4>Phone</h4>
-              <p>+91 8733048922</p>
-            </div>
+            <div><h4>Phone</h4><p>+91 87330 48922</p></div>
           </div>
-
           <h4>Connect on Social</h4>
           <div class="social-buttons">
-            <a href="https://github.com/AnikeshTiwari" target="_blank" class="social-btn">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/anikesh-tiwari-35a592217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-btn">
-              <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
+            <a href="https://github.com/AnikeshTiwari" target="_blank" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/anikesh-tiwari-35a592217" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
           </div>
-
-          <a href="https://drive.google.com/file/d/1JcIsWL-r0MtMnk4BLgL7pSsECvK64mMP/view?usp=sharing" target="_blank"
-            class="resume-btn">
+          <a href="https://drive.google.com/file/d/1JcIsWL-r0MtMnk4BLgL7pSsECvK64mMP/view?usp=sharing" target="_blank" class="resume-btn">
             <i class="fas fa-download"></i> Download Resume
           </a>
         </div>
 
         <div class="contact-right">
           <h3>Send a Message</h3>
-
           <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-
             <input type="hidden" name="access_key" value="9fc0d026-a831-48e5-ac33-14a779b05bc3" />
-
-
             <input type="hidden" name="subject" value="New Portfolio Contact!" />
-
             <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you.html" />
-
             <div class="form-row">
               <input type="text" name="name" id="name" placeholder="Name" required />
               <input type="email" name="email" id="email" placeholder="Email" required />
             </div>
-
             <input type="text" name="subject" id="subject" placeholder="Subject" required />
-
             <textarea name="message" id="message" placeholder="Message" rows="6" required></textarea>
-
             <button type="submit" class="send-btn" id="sendBtn">
-              <span class="btn-text">
-                <i class="fas fa-paper-plane"></i> Send Message
-              </span>
+              <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
               <span class="btn-loader"></span>
             </button>
           </form>
         </div>
+
         <div id="successPopup">
-          <p class="successPopup-msg">
-            Your message was sent successfully. I will get back to you soon.
-          </p>
+          <p class="successPopup-msg">Your message was sent successfully. I will get back to you soon.</p>
           <button id="closePopup">OK</button>
         </div>
       </div>
     </div>
   </section>
 
-
-
-  
   <!-- ==================== Footer ==================== -->
-
   <footer class="footer">
     <div class="container footer-container">
       <p>© 2025 Anikesh Tiwari. All rights reserved.</p>
     </div>
   </footer>
 
-  <button id="back-to-top" class="back-to-top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
+  <button id="back-to-top" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
 
   <script src="script.js"></script>
 </body>
-
 </html>
