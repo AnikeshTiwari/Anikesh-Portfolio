@@ -1,4 +1,4 @@
-/* ==================== Scroll to top on load ==================== */
+﻿/* ==================== Scroll to top on load ==================== */
 if ("scrollRestoration" in history) history.scrollRestoration = "manual";
 window.addEventListener("load", () => window.scrollTo({ top: 0, behavior: "instant" }));
 
@@ -87,9 +87,10 @@ document.getElementById("back-to-top").addEventListener("click", () => {
 
 /* ==================== Role Text Animation ==================== */
 const roles = [
-  { text: "Full Stack", color: "#3b82f6" },
-  { text: "Frontend",   color: "#10b981" },
-  { text: "AI-Powered", color: "#f59e0b" },
+  { text: "Backend",          color: "#3b82f6" },
+  { text: "Full Stack",       color: "#10b981" },
+  { text: "NestJS & Laravel", color: "#8b5cf6" },
+  { text: "AI-Powered",       color: "#f59e0b" },
 ];
 let roleIndex = 0;
 const textEl = document.getElementById("changing-role");
