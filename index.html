@@ -3,303 +3,639 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anikesh Tiwari | Backend & Full Stack Developer</title>
+  <title>Anikesh Tiwari â€” Backend & Cloud Architecture Engineer</title>
+  <meta name="description" content="Backend & Full Stack Engineer specializing in NestJS, TypeScript, Laravel, PostgreSQL, and Cloud Systems." />
   <link rel="icon" type="image/png" href="Images/logocircle.png" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Modern Engineering Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Mouse Tracker -->
-  <div id="cursor-dot"></div>
-  <div id="cursor-ring"></div>
+  <!-- Ambient Grid Background -->
+  <div class="bg-grid"></div>
+  <div class="bg-spotlight" id="spotlight"></div>
 
-  <!-- ==================== Navigation ==================== -->
-  <nav id="navbar">
-    <div class="container nav-container">
-      <a href="#home" class="logo gradient-text">Anikesh.dev</a>
-      <button id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
-      <ul id="nav-links" class="nav-links">
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
+  <!-- ==================== Header & Navigation ==================== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#home" class="nav-brand">
+        <span class="terminal-prompt">$</span>
+        <span class="brand-text">anikesh.tiwari</span>
+        <span class="brand-cursor">_</span>
+      </a>
+
+      <button id="mobileMenuBtn" class="mobile-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#stack" class="nav-item">Stack</a>
+        <a href="#projects" class="nav-item">Systems</a>
+        <a href="#contact" class="nav-item nav-btn-contact">Contact</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <!-- ==================== Hero Section ==================== -->
-  <section id="home" class="hero">
-    <div class="container hero-container">
-      <div class="hero-image">
-        <div class="image-wrapper">
-          <div class="border-ring">
-            <img src="Images/Anikesh.jpeg" alt="Profile Image" />
+  <main>
+    <!-- ==================== Hero Section ==================== -->
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        
+        <div class="hero-main">
+          <!-- Live Status Pill -->
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span class="status-label">Backend Developer at <strong>Tourpublish</strong> (Riga, Latvia)</span>
           </div>
-          <div class="glow-layer layer1"></div>
-          <div class="glow-layer layer2"></div>
-          <div class="glow-layer layer3"></div>
-        </div>
-      </div>
-      <div class="hero-text">
-        <h1>Hi, I'm <span class="gradient-text">Anikesh</span></h1>
-        <h2>
-          <span id="changing-role">Backend</span>
-          <span class="constant-text">Developer</span>
-        </h2>
-        <p>
-          Backend & Full Stack Developer with production experience engineering enterprise cloud architectures and scalable web applications across <strong>TypeScript, NestJS, Node.js, PHP, Laravel, PostgreSQL, and MySQL</strong>. Hands-on expertise architecting high-throughput RESTful APIs, multi-tenant databases, Stripe payment integrations, and OpenTelemetry observability pipelines.
-        </p>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">Hire Me</a>
-          <a href="#projects" class="btn btn-outline">View Work</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ==================== About Section ==================== -->
-  <section id="about" class="about-section">
-    <div class="container">
-      <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
-      <div class="divider"></div>
-      <div class="about-content">
-        <div class="about-image">
-          <img src="./Images/1212.jpg" alt="About Me" />
-        </div>
-        <div class="about-text">
-          <h3>Who am I?</h3>
-          <p>
-            I'm <strong>Anikesh Tiwari</strong>, a Backend & Full Stack Developer with hands-on experience building enterprise-grade backend services and scalable web applications across <strong>NestJS 11, TypeScript, Node.js, Laravel 12, PHP 8.x, PostgreSQL, and MySQL</strong>. I specialize in architecting high-throughput RESTful APIs, multi-tenant database systems, payment gateways, and cloud observability pipelines. I also hold an AI/ML Prompt Engineering background in LLM evaluation and NLP integration.
+          <h1 class="hero-name">
+            Anikesh Rakesh Tiwari
+          </h1>
+          <h2 class="hero-role">
+            Backend &amp; Cloud Systems Engineer
+          </h2>
+
+          <p class="hero-bio">
+            Engineering high-throughput distributed microservices, multi-tenant databases, Stripe payment integrations, and OpenTelemetry observability pipelines across <strong>TypeScript, NestJS 11, Node.js, PHP, Laravel 12, PostgreSQL, and MySQL</strong>.
           </p>
-          <div class="info-box">
-            <i class="fas fa-graduation-cap"></i>
-            <div>
-              <h4 class="education-h4">B.E. — Information Science and Engineering</h4>
-              <p class="education-p">Brindavan Group of Institutions, VTU, Bengaluru &bull; 2023 – 2026 &bull; <strong>CGPA: 7.50</strong></p>
-            </div>
-          </div>
-          <div class="info-box">
-            <i class="fas fa-graduation-cap"></i>
-            <div>
-              <h4 class="education-h4">Diploma — Information Technology</h4>
-              <p class="education-p">Bhagwan Mahavir University, Surat, Gujarat &bull; 2021 – 2023 &bull; <strong>CGPA: 6.91</strong></p>
-            </div>
-          </div>
-          <div class="about-buttons">
-            <a href="https://drive.google.com/file/d/1JcIsWL-r0MtMnk4BLgL7pSsECvK64mMP/view?usp=sharing" target="_blank" class="btn btn-primary">Download Resume</a>
-            <a href="#contact" class="btn btn-outline">Contact Me</a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Experience Timeline -->
-      <div class="experience">
-        <h3>My <span class="gradient-text">Experience</span></h3>
-        <div class="timeline">
-          
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <h4 class="company-name">Tourpublish &bull; Riga, Latvia (Remote)</h4>
-                <p class="role-duration">Backend Developer &bull; July 2026 – Present</p>
-              </div>
-              <p>Architecting enterprise backend services and high-throughput RESTful APIs using <strong>NestJS 11, TypeScript, and Node.js</strong> for international travel platforms. Engineered cloud database architectures with <strong>PostgreSQL and Supabase</strong>, integrated Stripe payment gateways, AWS S3 presigned asset storage, Cloudflare, Web-Push notifications, and OpenTelemetry (OTLP) distributed tracing.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <h4 class="company-name">Catchysystem Technologies Pvt. Ltd. &bull; Surat, Gujarat</h4>
-                <p class="role-duration">Full Stack Developer &bull; July 2025 – July 2026</p>
-              </div>
-              <p>Shipped multi-tenant web applications across Healthcare, HRMS, and CRM domains using <strong>Laravel 12, PHP 8.2, MySQL, Inertia.js, and Blade</strong>. Engineered secure RESTful APIs with Sanctum authentication, Spatie Role-Based Access Control (RBAC), Yajra DataTables, DomPDF automated document generation, and Maatwebsite Excel reporting, cutting manual turnaround time by ~25% and server latency by ~20%.</p>
-            </div>
-          </div>
-          
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <h4 class="company-name">LearnersByte &bull; Hyderabad, India</h4>
-                <p class="role-duration">AI/ML Prompt Engineering Intern &bull; Jan 2026 – May 2026</p>
-              </div>
-              <p>Designed and iterated prompt architectures for 3 LLM-based NLP applications, evaluated AI-generated outputs across 10+ configurations to cut erroneous outputs by 25%, and authored a prompt-pattern knowledge base with 20+ tested strategies.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <h4 class="company-name">Touches Computer &bull; Surat, Gujarat</h4>
-                <p class="role-duration">Web Developer Intern &bull; Dec 2023 – Feb 2024</p>
-              </div>
-              <p>Delivered 10+ production-ready responsive pages in HTML, CSS, and JavaScript, cutting average data-retrieval latency by 25% through MySQL query optimization and resolving 15+ cross-browser rendering bugs across Chrome, Firefox, and Safari.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <h4 class="company-name">Suvya Web &bull; Surat, Gujarat</h4>
-                <p class="role-duration">Software Developer Intern &bull; Sep 2023 – Nov 2023</p>
-              </div>
-              <p>Implemented MVC-structured application modules with 3 backend engineers for 2 client-facing product releases, reducing QA-reported defects by 15% through unit testing and refactoring legacy code paths to improve response time by ~10%.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== Skills Section ==================== -->
-  <section id="skills" class="skills-section">
-    <div class="container">
-      <div class="skills-heading">
-        <h2 class="section-title-myskills">My <span class="gradient-text">Skills</span></h2>
-      </div>
-      <div class="divider"></div>
-      <div class="skills-flex-wrapper">
-        <div class="skills-container">
-          <div class="skill-card">
-            <h3>Backend Engineering</h3>
-            <p>▶ NestJS 11 &amp; Node.js</p>
-            <p>▶ Laravel 12 (MVC &amp; Eloquent)</p>
-            <p>▶ TypeScript &amp; PHP 8.x</p>
-            <p>▶ RESTful API Architecture</p>
-            <p>▶ Role-Based Access Control (RBAC)</p>
-            <p>▶ Laravel Sanctum &amp; JWT Auth</p>
-          </div>
-          <div class="skill-card">
-            <h3>Databases &amp; Cloud</h3>
-            <p>▶ PostgreSQL &amp; Supabase</p>
-            <p>▶ MySQL (Multi-Tenant &amp; Indexing)</p>
-            <p>▶ AWS S3 Presigned URLs</p>
-            <p>▶ Stripe Payment Gateways</p>
-            <p>▶ Cloudflare &amp; Web-Push</p>
-            <p>▶ SQLite &amp; Query Optimization</p>
-          </div>
-          <div class="skill-card">
-            <h3>Frontend &amp; UI</h3>
-            <p>▶ JavaScript (ES6+) &amp; HTML5/CSS3</p>
-            <p>▶ Laravel Blade &amp; Inertia.js</p>
-            <p>▶ Responsive Web Design</p>
-            <p>▶ DOM &amp; Asynchronous JS</p>
-            <p>▶ REST API Integration</p>
-            <p>▶ SheetJS &amp; DomPDF</p>
-          </div>
-          <div class="skill-card">
-            <h3>DevOps, QA &amp; AI/ML</h3>
-            <p>▶ OpenTelemetry (OTLP Tracing)</p>
-            <p>▶ Jest &amp; Supertest (E2E Testing)</p>
-            <p>▶ Git, GitHub &amp; Postman</p>
-            <p>▶ Prompt Engineering &amp; LLM Eval</p>
-            <p>▶ NLP Pipeline Testing</p>
-            <p>▶ OpenAPI / Swagger Docs</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== Projects Section ==================== -->
-  <section id="projects" class="projects-section">
-    <div class="container">
-      <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
-      <div class="divider"></div>
-      <div class="projects-grid">
-
-        <div class="project-card">
-          <h3>Tuition Fee &amp; Attendance Management</h3>
-          <p class="project-tech">JavaScript · Supabase · PostgreSQL · SheetJS · CSS3</p>
-          <p>Cloud-synchronized coaching platform with real-time Supabase PostgreSQL synchronization, offline localStorage failover, 4-tier RBAC with financial audit approvals, and interactive 1–31 day matrix attendance registers with sticky multi-column freezing &amp; automated Excel export.</p>
-        </div>
-
-        <div class="project-card">
-          <h3>Dental Laboratory Multi-Tenant CRM</h3>
-          <p class="project-tech">Laravel 12 · PHP 8.2 · MySQL · Inertia.js · REST APIs</p>
-          <p>Architected a multi-tenant CRM for dental laboratories to manage customer orders, production workflows, challans, and invoices. Consolidates 4 operational workflows into a single platform with automated PDF/barcode generation, cutting document turnaround time by ~40%.</p>
-        </div>
-
-        <div class="project-card">
-          <h3>Airport Management System</h3>
-          <p class="project-tech">PHP · MySQL · DBMS · XAMPP</p>
-          <p>Full-stack flight booking platform with JWT-style session authentication and 3-tier role-based access. Engineered a normalised MySQL schema handling 1,000+ flight records, reducing redundant query joins by 30% and retrieval latency by 20%.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== Contact Section ==================== -->
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
-      <p class="contact-subtitle">Have a vision in mind? I'd love to help you turn it into reality — let's talk!</p>
-      <div class="contact-wrapper">
-        <div class="contact-left">
-          <h3>Let's Connect</h3>
-          <div class="info-box">
-            <div class="icon"><i class="fas fa-envelope"></i></div>
-            <div><h4>Email</h4><p>sparkle.anikesh01@gmail.com</p></div>
-          </div>
-          <div class="info-box">
-            <div class="icon"><i class="fas fa-phone"></i></div>
-            <div><h4>Phone</h4><p>+91 87330 48922</p></div>
-          </div>
-          <h4>Connect on Social</h4>
-          <div class="social-buttons">
-            <a href="https://github.com/AnikeshTiwari" target="_blank" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/anikesh-tiwari-35a592217" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-          </div>
-          <a href="https://drive.google.com/file/d/1JcIsWL-r0MtMnk4BLgL7pSsECvK64mMP/view?usp=sharing" target="_blank" class="resume-btn">
-            <i class="fas fa-download"></i> Download Resume
-          </a>
-        </div>
-
-        <div class="contact-right">
-          <h3>Send a Message</h3>
-          <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="9fc0d026-a831-48e5-ac33-14a779b05bc3" />
-            <input type="hidden" name="subject" value="New Portfolio Contact!" />
-            <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you.html" />
-            <div class="form-row">
-              <input type="text" name="name" id="name" placeholder="Name" required />
-              <input type="email" name="email" id="email" placeholder="Email" required />
-            </div>
-            <input type="text" name="subject" id="subject" placeholder="Subject" required />
-            <textarea name="message" id="message" placeholder="Message" rows="6" required></textarea>
-            <button type="submit" class="send-btn" id="sendBtn">
-              <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
-              <span class="btn-loader"></span>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-layer-group"></i>
+              <span>Explore Systems</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1JcIsWL-r0MtMnk4BLgL7pSsECvK64mMP/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <i class="fas fa-file-pdf"></i>
+              <span>Resume</span>
+            </a>
+            <button class="btn btn-ghost" id="heroCopyEmailBtn" title="Copy Email">
+              <i class="far fa-copy"></i>
+              <span>Copy Email</span>
             </button>
-          </form>
+          </div>
+
+          <div class="quick-tech-strip">
+            <span class="strip-label">CORE SPECIALTIES:</span>
+            <span class="tech-badge">NestJS 11</span>
+            <span class="tech-badge">Laravel 12</span>
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">Supabase</span>
+            <span class="tech-badge">Stripe APIs</span>
+            <span class="tech-badge">OpenTelemetry</span>
+            <span class="tech-badge">RBAC Isolation</span>
+          </div>
         </div>
 
-        <div id="successPopup">
-          <p class="successPopup-msg">Your message was sent successfully. I will get back to you soon.</p>
-          <button id="closePopup">OK</button>
+        <!-- Terminal & Telemetry Box -->
+        <div class="hero-aside">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="terminal-title">telemetry@tourpublish-prod:~</span>
+            </div>
+            
+            <div class="terminal-body">
+              <div class="term-line"><span class="term-cmd">$ curl -I https://api.tourpublish.com/health</span></div>
+              <div class="term-line term-success"><i class="fas fa-check"></i> HTTP/2 200 OK â€” [Uptime: 99.98%]</div>
+              
+              <div class="term-line"><span class="term-cmd">$ systemctl status backend-cluster</span></div>
+              <div class="term-block">
+                <span class="term-key">â— Engine:</span> <span class="term-val">NestJS 11 (Node.js/TypeScript)</span><br/>
+                <span class="term-key">â— Database:</span> <span class="term-val">PostgreSQL 16 + Supabase</span><br/>
+                <span class="term-key">â— Payments:</span> <span class="term-val">Stripe Webhooks &amp; Gateway</span><br/>
+                <span class="term-key">â— Storage:</span> <span class="term-val">AWS S3 Presigned Pipelines</span><br/>
+                <span class="term-key">â— Tracing:</span> <span class="term-val">OpenTelemetry (OTLP Collector)</span><br/>
+                <span class="term-key">â— Security:</span> <span class="term-val">Spatie RBAC &amp; Sanctum</span>
+              </div>
+
+              <div class="term-line"><span class="term-cmd">$ current-focus</span></div>
+              <div class="term-line term-accent">â†’ Scalable Microservices &amp; Multi-Tenant Database Optimization</div>
+            </div>
+          </div>
+
+          <!-- Developer Profile Snippet -->
+          <div class="author-banner">
+            <img src="Images/Anikesh.jpeg" alt="Anikesh Tiwari" class="author-avatar" />
+            <div class="author-info">
+              <strong>Anikesh Tiwari</strong>
+              <span>Bengaluru / Surat, India</span>
+              <div class="author-links">
+                <a href="https://github.com/AnikeshTiwari" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/anikesh-tiwari-35a592217/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ==================== Footer ==================== -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <p>© 2026 Anikesh Tiwari. All rights reserved.</p>
+    <!-- ==================== About Section ==================== -->
+    <section id="about" class="section">
+      <div class="container">
+        
+        <div class="section-label">
+          <span class="label-index">01.</span>
+          <span class="label-title">ARCHITECTURAL OVERVIEW</span>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-card">
+            <h3 class="card-title">Engineering Reliable, Data-Intensive Backends</h3>
+            <p>
+              I build enterprise backend platforms with a focus on <strong>robustness, predictable latency, and high-concurrency throughput</strong>. Over the past several years, I have architected and deployed services across <strong>NestJS, TypeScript, Laravel, PostgreSQL, and MySQL</strong>, handling complex relational data models, multi-tenant RBAC boundaries, automated document engines, and asynchronous cloud pipelines.
+            </p>
+            <p>
+              My engineering approach prioritizes clean domain boundaries, automated testing (Jest, Supertest), strict schema normalization, and end-to-end telemetry via OpenTelemetry to keep distributed microservices reliable in production.
+            </p>
+
+            <div class="metrics-grid">
+              <div class="metric-item">
+                <span class="metric-val">1+ Yrs</span>
+                <span class="metric-desc">Production Experience</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">5</span>
+                <span class="metric-desc">Engineering Roles &amp; Internships</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">~25%</span>
+                <span class="metric-desc">Database Query Latency Reduction</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">100%</span>
+                <span class="metric-desc">Role-Based Tenant Isolation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="education-card">
+            <h3 class="card-title">Academic Foundation</h3>
+            
+            <div class="academic-entry">
+              <div class="acad-header">
+                <strong>B.E. â€” Information Science &amp; Engineering</strong>
+                <span class="cgpa-pill">CGPA: 7.50</span>
+              </div>
+              <span class="acad-sub">Brindavan Group of Institutions, VTU &bull; Bengaluru</span>
+              <span class="acad-time">2023 â€” 2026</span>
+            </div>
+
+            <div class="academic-entry">
+              <div class="acad-header">
+                <strong>Diploma â€” Information Technology</strong>
+                <span class="cgpa-pill">CGPA: 6.91</span>
+              </div>
+              <span class="acad-sub">Bhagwan Mahavir University &bull; Surat, Gujarat</span>
+              <span class="acad-time">2021 â€” 2023</span>
+            </div>
+
+            <div class="certifications-block">
+              <span class="cert-label">Industry Simulations (Forage):</span>
+              <ul class="cert-list">
+                <li><i class="fas fa-check"></i> Solution Architecture Simulation</li>
+                <li><i class="fas fa-check"></i> Developer Engineering Simulation</li>
+                <li><i class="fas fa-check"></i> Front-End Software Engineering</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== Experience Section ==================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        
+        <div class="section-label">
+          <span class="label-index">02.</span>
+          <span class="label-title">PRODUCTION EXPERIENCE</span>
+        </div>
+
+        <div class="experience-list">
+
+          <!-- Tourpublish -->
+          <article class="exp-card current-role">
+            <div class="exp-header">
+              <div>
+                <span class="role-badge">ACTIVE PRODUCTION</span>
+                <h3 class="exp-role">Backend Developer</h3>
+                <h4 class="exp-company">Tourpublish &bull; Riga, Latvia <span class="badge-remote">Remote</span></h4>
+              </div>
+              <span class="exp-period">July 2026 â€” Present</span>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>Architecting enterprise backend services and high-throughput RESTful APIs using <strong>NestJS 11, TypeScript, and Node.js</strong> for international travel applications.</li>
+              <li>Engineered cloud database architectures on <strong>PostgreSQL and Supabase</strong>, designing normalized schemas and optimizing indices for low-latency queries.</li>
+              <li>Integrated <strong>Stripe payment gateways, AWS S3 presigned asset storage, Cloudflare CDN, and Web-Push</strong> notification delivery pipelines.</li>
+              <li>Implemented <strong>OpenTelemetry (OTLP)</strong> observability for distributed request tracing and authored OpenAPI/Swagger specifications paired with automated Jest/Supertest E2E suites.</li>
+            </ul>
+
+            <div class="exp-tags">
+              <span>NestJS 11</span><span>TypeScript</span><span>PostgreSQL</span><span>Supabase</span><span>Stripe</span><span>AWS S3</span><span>OpenTelemetry</span><span>Jest</span>
+            </div>
+          </article>
+
+          <!-- Catchysystem -->
+          <article class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Full Stack Developer</h3>
+                <h4 class="exp-company">Catchysystem Technologies Pvt. Ltd. &bull; Surat, Gujarat</h4>
+              </div>
+              <span class="exp-period">July 2025 â€” July 2026</span>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>Shipped multi-tenant enterprise applications across Healthcare, HRMS, and CRM domains using <strong>Laravel 12, PHP 8.2, MySQL, Inertia.js, and Blade</strong>.</li>
+              <li>Engineered secure RESTful APIs with Sanctum authentication and <strong>Spatie Role-Based Access Control (RBAC)</strong>, enforcing strict multi-tier tenant data isolation.</li>
+              <li>Integrated Yajra DataTables, DomPDF automated document generation, and Maatwebsite Excel reporting, cutting manual turnaround time by <strong>~25%</strong>.</li>
+              <li>Optimised critical database queries and multi-tenant schema migrations, reducing server latency by approximately <strong>20%</strong> across high-traffic modules.</li>
+            </ul>
+
+            <div class="exp-tags">
+              <span>Laravel 12</span><span>PHP 8.2</span><span>MySQL</span><span>Inertia.js</span><span>Spatie RBAC</span><span>Yajra DataTables</span><span>DomPDF</span>
+            </div>
+          </article>
+
+          <!-- LearnersByte -->
+          <article class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">AI/ML Prompt Engineering Intern</h3>
+                <h4 class="exp-company">LearnersByte &bull; Hyderabad, India</h4>
+              </div>
+              <span class="exp-period">Jan 2026 â€” May 2026</span>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>Designed and iterated prompt architectures for 3 LLM-based NLP applications, measurably improving response contextual accuracy through structured A/B testing.</li>
+              <li>Evaluated AI-generated outputs across 10+ prompt configurations and refined strategies based on performance benchmarks, cutting erroneous outputs by an estimated <strong>25%</strong>.</li>
+              <li>Integrated AI-generated content into 2 web application interfaces in collaboration with the frontend team, reducing manual content-curation effort by <strong>~30%</strong>.</li>
+              <li>Authored a prompt-pattern knowledge base documenting 20+ tested strategies, enabling faster engineering onboarding.</li>
+            </ul>
+
+            <div class="exp-tags">
+              <span>Prompt Engineering</span><span>LLM Evaluation</span><span>NLP Integration</span><span>A/B Testing</span><span>Python</span>
+            </div>
+          </article>
+
+          <!-- Touches Computer -->
+          <article class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Web Developer Intern</h3>
+                <h4 class="exp-company">Touches Computer &bull; Surat, Gujarat</h4>
+              </div>
+              <span class="exp-period">Dec 2023 â€” Feb 2024</span>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>Delivered 10+ production-ready responsive pages in HTML, CSS, and JavaScript, contributing to a measured 20% uplift in session engagement metrics.</li>
+              <li>Optimised MySQL queries across 3 internal data tools, cutting average data-retrieval latency by 25% and eliminating slow-query bottlenecks.</li>
+              <li>Diagnosed and resolved 15+ cross-browser rendering bugs, achieving consistent UI parity across Chrome, Firefox, and Safari.</li>
+            </ul>
+
+            <div class="exp-tags">
+              <span>JavaScript</span><span>HTML5 / CSS3</span><span>MySQL Optimization</span><span>Cross-Browser QA</span>
+            </div>
+          </article>
+
+          <!-- Suvya Web -->
+          <article class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Software Developer Intern</h3>
+                <h4 class="exp-company">Suvya Web &bull; Surat, Gujarat</h4>
+              </div>
+              <span class="exp-period">Sep 2023 â€” Nov 2023</span>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>Implemented MVC-structured application modules with 3 backend engineers, contributing to 2 client-facing product releases on schedule.</li>
+              <li>Reduced QA-reported defects by 15% through systematic unit testing and structured debugging sessions across a 3-month sprint cycle.</li>
+              <li>Refactored legacy code paths to eliminate redundant database calls, improving overall system response time by an estimated 10%.</li>
+            </ul>
+
+            <div class="exp-tags">
+              <span>PHP</span><span>MySQL</span><span>MVC Architecture</span><span>Unit Testing</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== Technical Stack Section ==================== -->
+    <section id="stack" class="section">
+      <div class="container">
+        
+        <div class="section-label">
+          <span class="label-index">03.</span>
+          <span class="label-title">TECHNICAL PROFICIENCIES</span>
+        </div>
+
+        <div class="stack-grid">
+          
+          <div class="stack-box">
+            <div class="stack-head">
+              <span class="stack-icon"><i class="fas fa-server"></i></span>
+              <div>
+                <h4>Backend &amp; Microservices</h4>
+                <p>Frameworks, languages &amp; API design</p>
+              </div>
+            </div>
+            <div class="stack-items">
+              <div class="tech-item"><i class="fa-brands fa-node-js"></i> NestJS 11</div>
+              <div class="tech-item"><i class="fa-brands fa-laravel"></i> Laravel 12 (MVC)</div>
+              <div class="tech-item"><i class="fa-brands fa-js"></i> TypeScript</div>
+              <div class="tech-item"><i class="fa-brands fa-node"></i> Node.js</div>
+              <div class="tech-item"><i class="fa-brands fa-php"></i> PHP 8.x</div>
+              <div class="tech-item"><i class="fas fa-network-wired"></i> RESTful Architecture</div>
+              <div class="tech-item"><i class="fas fa-cubes"></i> Microservices</div>
+              <div class="tech-item"><i class="fas fa-key"></i> Laravel Sanctum / JWT</div>
+              <div class="tech-item"><i class="fas fa-shield-halved"></i> Spatie RBAC</div>
+            </div>
+          </div>
+
+          <div class="stack-box">
+            <div class="stack-head">
+              <span class="stack-icon"><i class="fas fa-database"></i></span>
+              <div>
+                <h4>Databases &amp; Cloud Infrastructure</h4>
+                <p>Storage, indexing &amp; third-party APIs</p>
+              </div>
+            </div>
+            <div class="stack-items">
+              <div class="tech-item"><i class="fas fa-database"></i> PostgreSQL 16</div>
+              <div class="tech-item"><i class="fas fa-bolt"></i> Supabase</div>
+              <div class="tech-item"><i class="fas fa-server"></i> MySQL (Multi-Tenant)</div>
+              <div class="tech-item"><i class="fa-brands fa-aws"></i> AWS S3 Presigned URLs</div>
+              <div class="tech-item"><i class="fa-brands fa-stripe"></i> Stripe Payment Gateways</div>
+              <div class="tech-item"><i class="fa-brands fa-cloudflare"></i> Cloudflare</div>
+              <div class="tech-item"><i class="fas fa-bell"></i> Web-Push Notifications</div>
+              <div class="tech-item"><i class="fas fa-magnifying-glass"></i> Schema Indexing &amp; Migrations</div>
+            </div>
+          </div>
+
+          <div class="stack-box">
+            <div class="stack-head">
+              <span class="stack-icon"><i class="fas fa-chart-line"></i></span>
+              <div>
+                <h4>Observability, QA &amp; AI</h4>
+                <p>Telemetry, test suites &amp; LLM workflows</p>
+              </div>
+            </div>
+            <div class="stack-items">
+              <div class="tech-item"><i class="fas fa-satellite-dish"></i> OpenTelemetry (OTLP)</div>
+              <div class="tech-item"><i class="fas fa-vial-circle-check"></i> Jest &amp; Supertest E2E</div>
+              <div class="tech-item"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</div>
+              <div class="tech-item"><i class="fas fa-paper-plane"></i> Postman</div>
+              <div class="tech-item"><i class="fas fa-brain"></i> Prompt Engineering</div>
+              <div class="tech-item"><i class="fas fa-check-double"></i> LLM Output Evaluation</div>
+              <div class="tech-item"><i class="fas fa-book"></i> OpenAPI / Swagger Docs</div>
+            </div>
+          </div>
+
+          <div class="stack-box">
+            <div class="stack-head">
+              <span class="stack-icon"><i class="fas fa-code"></i></span>
+              <div>
+                <h4>Frontend &amp; Integration</h4>
+                <p>Client bridges &amp; reporting engines</p>
+              </div>
+            </div>
+            <div class="stack-items">
+              <div class="tech-item"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</div>
+              <div class="tech-item"><i class="fas fa-arrows-split-up-and-left"></i> Inertia.js</div>
+              <div class="tech-item"><i class="fas fa-layer-group"></i> Laravel Blade</div>
+              <div class="tech-item"><i class="fa-brands fa-html5"></i> HTML5 &amp; CSS3</div>
+              <div class="tech-item"><i class="fas fa-file-excel"></i> SheetJS Excel Engine</div>
+              <div class="tech-item"><i class="fas fa-file-pdf"></i> DomPDF Document Engine</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== Featured Projects Section ==================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        
+        <div class="section-label">
+          <span class="label-index">04.</span>
+          <span class="label-title">FEATURED SYSTEMS</span>
+        </div>
+
+        <div class="projects-list">
+
+          <!-- System 1 -->
+          <div class="project-entry">
+            <div class="proj-header">
+              <div class="proj-title-group">
+                <span class="proj-num">SYSTEM // 01</span>
+                <h3>Tuition Fee &amp; Attendance Management System</h3>
+              </div>
+              <div class="proj-links">
+                <a href="https://github.com/AnikeshTiwari/tuition-fee-system" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+            <p class="proj-description">
+              Cloud-synchronized operations platform built with real-time Supabase PostgreSQL integration and offline localStorage failover. Implemented 4-tier RBAC (Superadmin, Admin, Teacher, Viewer) with two-way approval workflows for financial and attendance correction auditing. Engineered interactive 1â€“31 day matrix attendance registers with sticky multi-column freezing and automated SheetJS Excel export.
+            </p>
+            <div class="proj-badges">
+              <span>JavaScript</span><span>Supabase</span><span>PostgreSQL</span><span>SheetJS</span><span>CSS3</span><span>RBAC</span>
+            </div>
+          </div>
+
+          <!-- System 2 -->
+          <div class="project-entry">
+            <div class="proj-header">
+              <div class="proj-title-group">
+                <span class="proj-num">SYSTEM // 02</span>
+                <h3>Dental Laboratory Multi-Tenant CRM</h3>
+              </div>
+              <div class="proj-links">
+                <span class="private-badge"><i class="fas fa-lock"></i> Production Enterprise</span>
+              </div>
+            </div>
+            <p class="proj-description">
+              Architected a multi-tenant CRM for dental laboratories to manage customer orders, production workflows, challans, and invoices. Consolidates 4 operational workflows into a single platform with automated invoice and challan PDF/barcode generation, cutting document turnaround time by an estimated 40%.
+            </p>
+            <div class="proj-badges">
+              <span>Laravel 12</span><span>PHP 8.2</span><span>MySQL</span><span>Inertia.js</span><span>REST APIs</span><span>DomPDF</span>
+            </div>
+          </div>
+
+          <!-- System 3 -->
+          <div class="project-entry">
+            <div class="proj-header">
+              <div class="proj-title-group">
+                <span class="proj-num">SYSTEM // 03</span>
+                <h3>Airport Management &amp; Flight Booking System</h3>
+              </div>
+              <div class="proj-links">
+                <a href="https://github.com/AnikeshTiwari" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+            <p class="proj-description">
+              Full-stack flight reservation system with JWT-style session authentication and 3-tier role-based access (admin, staff, passenger). Engineered a normalised MySQL schema to handle 1,000+ flight records, reducing redundant query joins by 30% and cutting retrieval time by 20% via indexed foreign keys.
+            </p>
+            <div class="proj-badges">
+              <span>PHP</span><span>MySQL</span><span>DBMS</span><span>XAMPP</span><span>Relational Schemas</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== Contact Section ==================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        
+        <div class="section-label">
+          <span class="label-index">05.</span>
+          <span class="label-title">INITIATE CONTACT</span>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-col-left">
+            <h3 class="contact-title">Let's Discuss Backend Engineering &amp; Distributed Systems</h3>
+            <p class="contact-lead">
+              Available for full-time backend and full stack engineering roles, high-concurrency cloud architecture consulting, and enterprise contract work.
+            </p>
+
+            <div class="direct-channels">
+              <div class="channel-row" id="emailCopyRow">
+                <i class="fas fa-envelope channel-icon"></i>
+                <div>
+                  <span class="channel-label">EMAIL ADDRESS</span>
+                  <span class="channel-val" id="rawEmail">sparkle.anikesh01@gmail.com</span>
+                </div>
+                <button type="button" class="btn-copy-mini" id="copyEmailTrigger" title="Copy to clipboard">
+                  <i class="far fa-copy"></i>
+                </button>
+              </div>
+
+              <a href="tel:+918733048922" class="channel-row channel-link">
+                <i class="fas fa-phone channel-icon"></i>
+                <div>
+                  <span class="channel-label">PHONE / WHATSAPP</span>
+                  <span class="channel-val">+91 87330 48922</span>
+                </div>
+                <i class="fas fa-arrow-right channel-arrow"></i>
+              </a>
+
+              <div class="channel-row">
+                <i class="fas fa-location-dot channel-icon"></i>
+                <div>
+                  <span class="channel-label">LOCATION</span>
+                  <span class="channel-val">Bengaluru / Surat, India (Open to Remote Worldwide)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links-bar">
+              <a href="https://github.com/AnikeshTiwari" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/anikesh-tiwari-35a592217/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+              </a>
+              <a href="https://drive.google.com/file/d/1JcIsWL-r0MtMnk4BLgL7pSsECvK64mMP/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="social-btn resume-btn">
+                <i class="fas fa-file-pdf"></i> Resume (PDF)
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-col-right">
+            <form id="contactForm" class="contact-form-styled" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="9fc0d026-a831-48e5-ac33-14a779b05bc3" />
+              <input type="hidden" name="subject" value="New Engineering Inquiry from Anikesh.dev" />
+
+              <div class="form-row-dual">
+                <div class="form-field">
+                  <label for="name">NAME</label>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required />
+                </div>
+                <div class="form-field">
+                  <label for="email">EMAIL</label>
+                  <input type="email" id="email" name="email" placeholder="john@company.com" required />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="subject">SUBJECT</label>
+                <input type="text" id="subject" name="subject" placeholder="Backend Engineer Role / Project Inquiry" required />
+              </div>
+
+              <div class="form-field">
+                <label for="message">MESSAGE</label>
+                <textarea id="message" name="message" rows="5" placeholder="Details about your architecture requirements or role..." required></textarea>
+              </div>
+
+              <button type="submit" id="sendBtn" class="btn btn-primary btn-block">
+                <span class="btn-text"><i class="fas fa-paper-plane"></i> Transmit Message</span>
+                <span class="btn-loader"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Success Toast Modal -->
+  <div id="successModal" class="modal-overlay">
+    <div class="modal-box">
+      <i class="fas fa-check-circle modal-icon"></i>
+      <h3>Transmission Successful</h3>
+      <p>Your message has been dispatched. I will respond to your inquiry promptly.</p>
+      <button id="modalCloseBtn" class="btn btn-primary">Close</button>
+    </div>
+  </div>
+
+  <!-- Toast for Copy -->
+  <div id="toast" class="toast-bar">
+    <i class="fas fa-clipboard-check"></i> Email copied to clipboard: sparkle.anikesh01@gmail.com
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-meta">
+        <strong>Anikesh Rakesh Tiwari</strong>
+        <span>Backend &amp; Cloud Systems Engineer</span>
+      </div>
+      <div class="footer-copy">
+        Â© 2026 Anikesh Tiwari &bull; Built with standard Web standards &amp; clean engineering principles.
+      </div>
     </div>
   </footer>
-
-  <button id="back-to-top" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
 
   <script src="script.js"></script>
 </body>
